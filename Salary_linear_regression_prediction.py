@@ -8,7 +8,7 @@ Created on Tue May 12 21:47:06 2020
 
 # importing libraries
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import pandas as pd
 
 #importing Datasets
@@ -29,3 +29,19 @@ regressor.fit(experience_train.reshape(-1, 1), salary_train)
 
 # Predicting the Test set results
 salary_pred = regressor.predict(experience_test.reshape(-1, 1))
+
+# Visualsing the Training set results
+plt.scatter(experience_train, salary_train, color='red')
+plt.plot(experience_train, regressor.predict(experience_train.reshape(-1,1)), color='blue')
+plt.title('Salary vs Experience (Training Set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
+
+# Visulaising the Testing set results
+plt.scatter(experience_test, salary_test, color='red')
+plt.plot(experience_train, regressor.predict(experience_train.reshape(-1,1)), color='blue')
+plt.title('Salary vs Experience (Testing Set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
