@@ -20,9 +20,9 @@ salary = dataset.iloc[:, 1].values
 from sklearn.model_selection import train_test_split
 experience_train, experience_test, salary_train, salary_test = train_test_split(experience, salary, test_size = 1/3, random_state = 0)
 
-# Feature Scaling
-"""
-from sklearn.preprocessing import StandardScaler
-sc_X = StandardScaler()
-X_train = sc_X.fit_transform(X_train)
-X_test = sc_X.transform(X_test)"""
+# Feature Scaling will be taken care by Linear regression
+
+# Fitting Linear Regression to the Training set
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(experience_train.reshape(-1, 1), salary_train)
