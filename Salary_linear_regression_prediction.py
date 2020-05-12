@@ -26,3 +26,6 @@ experience_train, experience_test, salary_train, salary_test = train_test_split(
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(experience_train.reshape(-1, 1), salary_train)
+
+# Predicting the Test set results
+salary_pred = regressor.predict(experience_test.reshape(-1, 1))
