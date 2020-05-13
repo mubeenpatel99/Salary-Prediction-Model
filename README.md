@@ -4,12 +4,12 @@ This is a simple Salary Predicting Model based on Linear Regression and the pred
 
 ## Visualizing Model
 
-* Salary vs Experience (Training Set)
+* **Salary vs Experience (Training Set)**
 
 ![Training Set](./documentation/Training.png)
 
-* Salary vs Experience (Testing Set)
+* **Salary vs Experience (Testing Set)**
 
 ![Testing Set](./documentation/Testing.png)
 
-This Model is developed while the learning phase of ML.
+*This Model is developed while the learning phase of ML.*
