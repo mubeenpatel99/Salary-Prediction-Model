@@ -11,3 +11,5 @@ This is a simple Salary Predicting Model based on Linear Regression and the pred
 * Salary vs Experience (Testing Set)
 
 ![Testing Set](./documentation/Testing.png)
+
+This Model is developed while the learning phase of ML.
