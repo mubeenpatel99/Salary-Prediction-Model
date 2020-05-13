@@ -6,8 +6,8 @@ This is a simple Salary Predicting Model based on Linear Regression and the pred
 
 * Salary vs Experience (Training Set)
 
-![Training Set](./documentation/Salary vs Experience Training Set.png)
+![Training Set](./documentation/Training.png)
 
 * Salary vs Experience (Testing Set)
 
-![Testing Set](./documentation/Salary vs Experience Testing Set.png)
+![Testing Set](./documentation/Testing.png)
